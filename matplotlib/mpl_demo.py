@@ -1,5 +1,6 @@
 
 def line_plot():
+    from matplotlib import pyplot as plt
     # print(plt.style.available)
     # plt.xkdc()
     plt.style.use('fivethirtyeight')
