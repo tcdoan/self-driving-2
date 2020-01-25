@@ -37,7 +37,7 @@ def test_exercise_1_1(drone_class):
 
 	for drone in [student, solution]:
 		drone.set_propeller_angular_velocities(-5.0, 1.0, -2.0, 0.3)
-
+	print(solution.omega)
 	for om, om_sol in zip(student.omega, solution.omega):
 		if not close_enough(om, om_sol):
 			print("Error in exercise 1.1")
